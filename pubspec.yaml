@@ -1,0 +1,59 @@
+name: verify_secure_exam
+description: "Secure Exam Verifier console — verifies candidates assigned to a verifier's exam & center."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+
+  # State, routing, DI
+  get: any
+
+  # Storage / cache
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.2
+
+  # Networking
+  http: any
+  http_parser: any
+  connectivity_plus: ^7.2.0
+
+  # Capture (verifier profile photo/aadhaar + candidate live photo)
+  image_picker: ^1.1.2
+  flutter_image_compress: ^2.4.0
+  path_provider: ^2.1.5
+  path: any
+  permission_handler: ^12.0.3
+
+  # Biometric fingerprint device (SecuGen) bridge
+  device_apps: ^2.2.0
+  image: any
+
+  # Utils
+  intl: any
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/images/logo_launcher.png"
